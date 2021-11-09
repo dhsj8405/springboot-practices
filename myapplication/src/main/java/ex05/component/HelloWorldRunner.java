@@ -5,8 +5,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 
 
-public class HelloWorldRunner implements ApplicationRunner {
-	
+public class HelloWorldRunner implements ApplicationRunner {	
 	@Autowired
 	private MyComponent myComponent;
 	
@@ -14,5 +13,4 @@ public class HelloWorldRunner implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		myComponent.printHello();
 	}
-
 }
